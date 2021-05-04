@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+h2 {
+  width: 100%;
+  color: rgb(120, 158, 158);
+  text-align: center;
+  font: Arial 12px;
+
+}
+
+main    {
+  display: flex;
+  border: rgb(246, 114, 6) 20px;
+}
+
+#demo  {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: rgb(246, 114, 6) 10px;
+}
+
+/* DESKTOP */
+@media all and (min-width: 921px) and (max-width: 1399px){
+
+main {
+   width: auto;
+   margin: auto;
+ }
+
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+ }
+}
+#demo  {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*TABLET*/
+@media all and (min-width:738px) and (max-width: 920px) {
+
+  main {
+    width: auto;
+    overflow: hidden; 
+  }
+
+  img {
+    width:280px;
+    height: auto;
+    display: block;
+}
+#demo  {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+  /* PHONE */
+@media all and (max-width: 737px) {
+
+  main {
+    width: auto;
+    margin: 10px;
+    overflow: hidden; 
+  }
+
+  img {
+    width:280px;
+    height: auto;
+    display: block;
+  }
+
+#demo  {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+}
